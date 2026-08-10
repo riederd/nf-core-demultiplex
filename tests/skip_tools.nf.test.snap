@@ -48,6 +48,16 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_report.html",
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_summary.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Undetermined_S0_L001_R1_001.fastq.gz",
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/bclconvert-lane-stats-table.txt",
@@ -214,10 +224,10 @@
                 "multiqc_citations.txt:md5,4c806e63a283ec1b7e78cdae3a923d4f"
             ]
         ],
-        "timestamp": "2026-07-06T15:51:19.073974804",
+        "timestamp": "2026-07-30T16:09:47.948200738",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Skip Trimming": {
@@ -269,6 +279,16 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_report.html",
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_summary.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Undetermined_S0_L001_R1_001.fastq.gz",
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/bclconvert-lane-stats-table.txt",
@@ -461,10 +481,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-06T15:50:28.24933946",
+        "timestamp": "2026-07-30T16:08:52.793881693",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Skip MultiQC": {
@@ -522,6 +542,16 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_report.html",
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_summary.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Undetermined_S0_L001_R1_001.fastq.gz",
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqcsav",
                 "multiqcsav/multiqc_data",
                 "multiqcsav/multiqc_data/bclconvert-lane-stats-table.txt",
@@ -587,10 +617,10 @@
                 "multiqc_citations.txt:md5,4c806e63a283ec1b7e78cdae3a923d4f"
             ]
         ],
-        "timestamp": "2026-07-06T15:55:24.739244533",
+        "timestamp": "2026-07-30T16:14:26.540155636",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Skip Fastqc": {
@@ -648,6 +678,16 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_report.html",
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_summary.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Undetermined_S0_L001_R1_001.fastq.gz",
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/bclconvert-lane-stats-table.txt",
@@ -855,10 +895,10 @@
                 "multiqc_citations.txt:md5,4c806e63a283ec1b7e78cdae3a923d4f"
             ]
         ],
-        "timestamp": "2026-07-06T15:53:07.310717321",
+        "timestamp": "2026-07-30T16:11:40.378744096",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Skip Fastp & Fastqc": {
@@ -910,6 +950,16 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_report.html",
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_summary.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Undetermined_S0_L001_R1_001.fastq.gz",
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/bclconvert-lane-stats-table.txt",
@@ -1076,10 +1126,10 @@
                 "multiqc_citations.txt:md5,4c806e63a283ec1b7e78cdae3a923d4f"
             ]
         ],
-        "timestamp": "2026-07-06T15:53:57.569818391",
+        "timestamp": "2026-07-30T16:12:43.486127625",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     }
 }

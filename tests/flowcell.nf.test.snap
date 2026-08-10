@@ -20,6 +20,16 @@
                 }
             },
             [
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/falco-status-check-heatmap.txt",
@@ -583,10 +593,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-06T15:30:07.35611885",
+        "timestamp": "2026-07-30T13:44:05.897942435",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Test single-flowcell input - BCLCONVERT": {
@@ -610,6 +620,16 @@
                 }
             },
             [
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "miniseq_truseq_smrna",
                 "miniseq_truseq_smrna/HBRR1_S1_L001.fastp.fastq.gz",
                 "miniseq_truseq_smrna/HBRR1_S1_L001.fastp.fastq.gz.md5",
@@ -1004,10 +1024,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-06T15:34:53.145512802",
+        "timestamp": "2026-07-30T13:50:15.901833281",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Test single-flowcell input - BASES2FASTQ": {
@@ -1031,6 +1051,16 @@
                 }
             },
             [
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/falco-status-check-heatmap.txt",
@@ -1238,10 +1268,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-06T15:31:35.708949346",
+        "timestamp": "2026-07-30T13:46:04.634583013",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Test single-flowcell input - FQTK": {
@@ -1265,6 +1295,16 @@
                 }
             },
             [
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/falco-status-check-heatmap.txt",
@@ -2065,10 +2105,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-06T15:37:44.285520288",
+        "timestamp": "2026-07-30T13:53:55.502554169",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     },
     "Fails with both --input and --flowcell_samplesheet": {
@@ -2159,6 +2199,16 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Stats/DemuxSummaryF1L1.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Stats/FastqSummaryF1L1.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Stats/Stats.json",
+                "checkqc_reports.csv",
+                "demultiplex_interop.csv",
+                "demultiplex_logs.csv",
+                "demultiplex_reports.csv",
+                "demultiplex_stats.csv",
+                "demultiplexed_fastq.csv",
+                "falco_reports.csv",
+                "fastp_reports.csv",
+                "fastq_idx.csv",
+                "md5_checksums.csv",
                 "multiqc",
                 "multiqc/multiqc_data",
                 "multiqc/multiqc_data/bcl2fastq-lane-stats-table.txt",
@@ -2374,10 +2424,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-06T15:28:33.672534178",
+        "timestamp": "2026-07-30T13:40:49.764888558",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "25.10.4"
+            "nextflow": "26.04.0"
         }
     }
 }
