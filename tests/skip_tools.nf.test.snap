@@ -1,7 +1,7 @@
 {
     "Skip Fastp": {
         "content": [
-            11,
+            12,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.4.6"
@@ -167,6 +167,7 @@
                 "samplesheet/methylseq_samplesheet.csv",
                 "samplesheet/rnaseq_samplesheet.csv",
                 "samplesheet/sarek_samplesheet.csv",
+                "samplesheet/seqinspector_samplesheet.csv",
                 "samplesheet/taxprofiler_samplesheet.csv"
             ],
             [
@@ -231,7 +232,7 @@
     },
     "Skip Trimming": {
         "content": [
-            11,
+            12,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.4.6"
@@ -397,6 +398,7 @@
                 "samplesheet/methylseq_samplesheet.csv",
                 "samplesheet/rnaseq_samplesheet.csv",
                 "samplesheet/sarek_samplesheet.csv",
+                "samplesheet/seqinspector_samplesheet.csv",
                 "samplesheet/taxprofiler_samplesheet.csv"
             ],
             [
@@ -470,6 +472,10 @@
                     true
                 ],
                 [
+                    "seqinspector_samplesheet.csv",
+                    true
+                ],
+                [
                     "taxprofiler_samplesheet.csv",
                     true
                 ]
@@ -483,7 +489,7 @@
     },
     "Skip MultiQC": {
         "content": [
-            11,
+            12,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.4.6"
@@ -569,6 +575,7 @@
                 "samplesheet/methylseq_samplesheet.csv",
                 "samplesheet/rnaseq_samplesheet.csv",
                 "samplesheet/sarek_samplesheet.csv",
+                "samplesheet/seqinspector_samplesheet.csv",
                 "samplesheet/taxprofiler_samplesheet.csv"
             ],
             [
@@ -618,7 +625,7 @@
     },
     "Skip Fastqc": {
         "content": [
-            12,
+            13,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.4.6"
@@ -822,6 +829,7 @@
                 "samplesheet/methylseq_samplesheet.csv",
                 "samplesheet/rnaseq_samplesheet.csv",
                 "samplesheet/sarek_samplesheet.csv",
+                "samplesheet/seqinspector_samplesheet.csv",
                 "samplesheet/taxprofiler_samplesheet.csv"
             ],
             [
@@ -895,7 +903,7 @@
     },
     "Skip Fastp & Fastqc": {
         "content": [
-            11,
+            12,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.4.6"
@@ -1061,6 +1069,7 @@
                 "samplesheet/methylseq_samplesheet.csv",
                 "samplesheet/rnaseq_samplesheet.csv",
                 "samplesheet/sarek_samplesheet.csv",
+                "samplesheet/seqinspector_samplesheet.csv",
                 "samplesheet/taxprofiler_samplesheet.csv"
             ],
             [
