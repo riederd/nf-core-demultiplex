@@ -3,6 +3,12 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.7.2 - not yet released
+
+### `Fixed`
+
+- [#396](https://github.com/nf-core/demultiplex/pull/396) Fix handling of Element Bio (AVITI) sequencing runs w/o multiplexing (no index sequences) - [#395](https://github.com/nf-core/demultiplex/issues/395)
+
 ## 1.7.1 - 2026-04-20
 
 ### `Added`
