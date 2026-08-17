@@ -3,7 +3,32 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.7.2 - not yet released
+## 1.7.2 - dev
+
+### `Added`
+
+- [#398](https://github.com/nf-core/demultiplex/pull/398) Add `AGENTS.md` file with nf-core agent instructions
+
+### `Changed`
+
+- [#394](https://github.com/nf-core/demultiplex/pull/394) Template update for nf-core/tools v4.0.2
+- [#405](https://github.com/nf-core/demultiplex/pull/405) Template update for nf-core/tools v4.0.3
+- [#399](https://github.com/nf-core/demultiplex/pull/399) Back to dev
+- [#401](https://github.com/nf-core/demultiplex/pull/401) Add volume=40gb to nf-test runners to fix disk space issues
+- [#401](https://github.com/nf-core/demultiplex/pull/401) Update contributor ORCID identifiers and affiliations
+- [#402](https://github.com/nf-core/demultiplex/pull/402) Added seqinspector sample sheet generation
+
+### `Dependencies`
+
+| Dependency | Old version | New version |
+| ---------- | ----------- | ----------- |
+| multiqc    | 1.33        | 1.35        |
+
+### `Plugins`
+
+| Plugin    | Old version | New version |
+| --------- | ----------- | ----------- |
+| nf-schema | 2.7.0       | 2.7.2       |
 
 ### `Fixed`
 
