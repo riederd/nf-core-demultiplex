@@ -17,12 +17,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#401](https://github.com/nf-core/demultiplex/pull/401) Add volume=40gb to nf-test runners to fix disk space issues
 - [#401](https://github.com/nf-core/demultiplex/pull/401) Update contributor ORCID identifiers and affiliations
 - [#402](https://github.com/nf-core/demultiplex/pull/402) Added seqinspector sample sheet generation
+- Update bclconvert module from 4.4.6 to 4.5.4
+- Update bcl2fastq container registry to quay.io
+- Update multiqcsav module with new containers and apptainer support
 
 ### `Dependencies`
 
 | Dependency | Old version | New version |
 | ---------- | ----------- | ----------- |
+| bclconvert | 4.4.6       | 4.5.4       |
 | multiqc    | 1.33        | 1.35        |
+| pip        | 25.3        | 26.1.1      |
 
 ### `Plugins`
 
