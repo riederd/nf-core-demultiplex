@@ -17,13 +17,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#401](https://github.com/nf-core/demultiplex/pull/401) Update contributor ORCID identifiers and affiliations
 - [#402](https://github.com/nf-core/demultiplex/pull/402) Added seqinspector sample sheet generation
 - [#405](https://github.com/nf-core/demultiplex/pull/405) Template update for nf-core/tools v4.0.3
+- [#409](https://github.com/nf-core/demultiplex/pull/409) Update bclconvert and multiqcsav
 - [#410](https://github.com/nf-core/demultiplex/pull/410) Template update for nf-core/tools v4.1.0
 
 ### `Dependencies`
 
 | Dependency | Old version | New version |
 | ---------- | ----------- | ----------- |
+| bclconvert | 4.4.6       | 4.5.4       |
 | multiqc    | 1.33        | 1.35        |
+| multiqcsav |             |             |
+| --multiqc  | 1.33        | 1.35        |
+| --pip      | 25.3        | 26.1.1      |
 
 ### `Plugins`
 
