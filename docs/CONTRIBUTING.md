@@ -40,7 +40,7 @@ The nf-core stance on the use of AI and LLMs is that humans are still ultimately
 
 If you’re using AI tools, try to stick by these guidelines:
 
-- Keep PRs as small and focussed as possible
+- Keep PRs as small and focused as possible
 - Avoid any unnecessary changes, such as moving or refactoring code (unless that is the explicit intention of the PR)
 - Review all generated code yourself before opening a PR, and ensure that you understand it
 - Engage with the community review process and expect to make revisions
@@ -128,7 +128,7 @@ Please also refer to the [pipeline-specific contribution guidelines](#pipeline-s
 - [ ] Perform local tests to validate that the new code works as expected.
   - [ ] If applicable, add a new test in the `tests` directory.
 - [ ] Update `usage.md`, `output.md`, and `citation.md` as appropriate.
-- [ ] [Lint](lint) the code with nf-core/tools.
+- [ ] [Lint](#lint-tests) the code with nf-core/tools.
 - [ ] Update any diagrams or pipeline images as necessary.
 - [ ] Update MultiQC config `assets/multiqc_config.yml` so relevant suffixes, file name cleanup, and module plots are in the appropriate order.
 - [ ] If applicable, create a [MultiQC](https://seqera.io/multiqc/) module.
