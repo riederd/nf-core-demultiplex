@@ -134,7 +134,6 @@ output {
         index {
             path 'demultiplexed_fastq.csv'
         }
-
     }
     demultiplex_reports {
         path { meta, report ->
@@ -219,7 +218,6 @@ output {
         index {
             path 'fastq_idx.csv'
         }
-
     }
     undetermined {
         enabled params.optional_outputs
