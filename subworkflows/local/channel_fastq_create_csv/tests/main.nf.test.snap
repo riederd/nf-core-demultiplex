@@ -1,9 +1,13 @@
 {
     "Should run without failures - atacseq": {
         "content": [
-            "\"sample\",\"fastq_1\",\"fastq_2\",\"replicate\"\n\"Sample1_atacseq\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"null/Sample1_S1_L001_R2_001.fastq.gz\",\"1\""
+            {
+                "samplesheet": [
+                    "atacseq_samplesheet.csv:md5,40adcac1edf4708ca433ab8a84d33dea"
+                ]
+            }
         ],
-        "timestamp": "2026-08-20T14:29:03.004241612",
+        "timestamp": "2026-08-20T17:38:07.533435116",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -11,9 +15,13 @@
     },
     "Should run without failures - rnaseq": {
         "content": [
-            "\"sample\",\"fastq_1\",\"strandedness\"\n\"Sample1\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"auto\""
+            {
+                "samplesheet": [
+                    "rnaseq_samplesheet.csv:md5,318d268fbbc83fd73b18778d81db260c"
+                ]
+            }
         ],
-        "timestamp": "2026-08-20T14:28:53.075153794",
+        "timestamp": "2026-08-20T17:37:52.234271311",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -21,9 +29,13 @@
     },
     "Should run without failures - taxprofiler": {
         "content": [
-            "\"sample\",\"fastq_1\",\"fasta\"\n\"Sample1_taxprofiler\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"\""
+            {
+                "samplesheet": [
+                    "taxprofiler_samplesheet.csv:md5,eb3f2081cf556c7ff2d17ef2abf6c384"
+                ]
+            }
         ],
-        "timestamp": "2026-08-20T14:29:12.98930207",
+        "timestamp": "2026-08-20T17:38:22.416072204",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -31,9 +43,13 @@
     },
     "Should run without failures - methylseq": {
         "content": [
-            "\"sample\",\"fastq_1\",\"genome\"\n\"Sample1_methylseq\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"\""
+            {
+                "samplesheet": [
+                    "methylseq_samplesheet.csv:md5,ac6db97f112ea7e1801067c0d19d3f1c"
+                ]
+            }
         ],
-        "timestamp": "2026-08-20T14:29:18.090363516",
+        "timestamp": "2026-08-20T17:38:29.866461631",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -41,9 +57,13 @@
     },
     "Should run without failures - sarek": {
         "content": [
-            "\"sample\",\"fastq_1\",\"fastq_2\",\"patient\",\"lane\"\n\"Sample1_sarek\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"null/Sample1_S1_L001_R2_001.fastq.gz\",\"\",\"1\""
+            {
+                "samplesheet": [
+                    "sarek_samplesheet.csv:md5,2c9683d26f09427e78e60402b4c90bac"
+                ]
+            }
         ],
-        "timestamp": "2026-08-20T14:28:57.947541633",
+        "timestamp": "2026-08-20T17:38:00.016017682",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -51,9 +71,13 @@
     },
     "Should run without failures - seqinspector": {
         "content": [
-            "\"sample\",\"fastq_1\",\"rundir\",\"tags\",\"flowcell\"\n\"Sample1_seqinspector\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"\",\"\",\"220422_M11111_0222_000000000-K9H97\""
+            {
+                "samplesheet": [
+                    "seqinspector_samplesheet.csv:md5,855609d6359360d72d3e4b424ddd85d4"
+                ]
+            }
         ],
-        "timestamp": "2026-08-20T14:29:08.090014484",
+        "timestamp": "2026-08-20T17:38:15.274049344",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
