@@ -1,0 +1,62 @@
+{
+    "Should run without failures - atacseq": {
+        "content": [
+            "\"sample\",\"fastq_1\",\"fastq_2\",\"replicate\"\n\"Sample1_atacseq\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"null/Sample1_S1_L001_R2_001.fastq.gz\",\"1\""
+        ],
+        "timestamp": "2026-08-20T14:29:03.004241612",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    },
+    "Should run without failures - rnaseq": {
+        "content": [
+            "\"sample\",\"fastq_1\",\"strandedness\"\n\"Sample1\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"auto\""
+        ],
+        "timestamp": "2026-08-20T14:28:53.075153794",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    },
+    "Should run without failures - taxprofiler": {
+        "content": [
+            "\"sample\",\"fastq_1\",\"fasta\"\n\"Sample1_taxprofiler\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"\""
+        ],
+        "timestamp": "2026-08-20T14:29:12.98930207",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    },
+    "Should run without failures - methylseq": {
+        "content": [
+            "\"sample\",\"fastq_1\",\"genome\"\n\"Sample1_methylseq\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"\""
+        ],
+        "timestamp": "2026-08-20T14:29:18.090363516",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    },
+    "Should run without failures - sarek": {
+        "content": [
+            "\"sample\",\"fastq_1\",\"fastq_2\",\"patient\",\"lane\"\n\"Sample1_sarek\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"null/Sample1_S1_L001_R2_001.fastq.gz\",\"\",\"1\""
+        ],
+        "timestamp": "2026-08-20T14:28:57.947541633",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    },
+    "Should run without failures - seqinspector": {
+        "content": [
+            "\"sample\",\"fastq_1\",\"rundir\",\"tags\",\"flowcell\"\n\"Sample1_seqinspector\",\"null/Sample1_S1_L001_R1_001.fastq.gz\",\"\",\"\",\"220422_M11111_0222_000000000-K9H97\""
+        ],
+        "timestamp": "2026-08-20T14:29:08.090014484",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    }
+}

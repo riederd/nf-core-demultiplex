@@ -1,7 +1,7 @@
 {
     "BCL-CONVERT": {
         "content": [
-            13,
+            7,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.5.4"
@@ -297,7 +297,7 @@
                 ]
             ]
         ],
-        "timestamp": "2026-08-17T11:39:28.124392684",
+        "timestamp": "2026-08-20T16:32:52.781115528",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"

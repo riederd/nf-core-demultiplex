@@ -8,44 +8,43 @@
 // SUBWORKFLOW: Consisting of a mix of local and nf-core/modules
 //
 
-include { BCL_DEMULTIPLEX                                           } from '../subworkflows/nf-core/bcl_demultiplex'
-include { FASTQ_CONTAM_SEQTK_KRAKEN                                 } from '../subworkflows/nf-core/fastq_contam_seqtk_kraken'
-include { RUNDIR_CHECKQC                                            } from '../subworkflows/local/rundir_checkqc'
-include { FASTQ_TO_SAMPLESHEET as FASTQ_TO_SAMPLESHEET_RNASEQ       } from '../modules/local/fastq_to_samplesheet'
-include { FASTQ_TO_SAMPLESHEET as FASTQ_TO_SAMPLESHEET_ATACSEQ      } from '../modules/local/fastq_to_samplesheet'
-include { FASTQ_TO_SAMPLESHEET as FASTQ_TO_SAMPLESHEET_TAXPROFILER  } from '../modules/local/fastq_to_samplesheet'
-include { FASTQ_TO_SAMPLESHEET as FASTQ_TO_SAMPLESHEET_SAREK        } from '../modules/local/fastq_to_samplesheet'
-include { FASTQ_TO_SAMPLESHEET as FASTQ_TO_SAMPLESHEET_METHYLSEQ    } from '../modules/local/fastq_to_samplesheet'
-include { FASTQ_TO_SAMPLESHEET as FASTQ_TO_SAMPLESHEET_SEQINSPECTOR } from '../modules/local/fastq_to_samplesheet'
-
+include { BCL_DEMULTIPLEX                                                   } from '../subworkflows/nf-core/bcl_demultiplex'
+include { FASTQ_CONTAM_SEQTK_KRAKEN                                         } from '../subworkflows/nf-core/fastq_contam_seqtk_kraken'
+include { RUNDIR_CHECKQC                                                    } from '../subworkflows/local/rundir_checkqc'
+include { CHANNEL_FASTQ_CREATE_CSV as CHANNEL_FASTQ_CREATE_CSV_RNASEQ       } from '../subworkflows/local/channel_fastq_create_csv'
+include { CHANNEL_FASTQ_CREATE_CSV as CHANNEL_FASTQ_CREATE_CSV_ATACSEQ      } from '../subworkflows/local/channel_fastq_create_csv'
+include { CHANNEL_FASTQ_CREATE_CSV as CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER  } from '../subworkflows/local/channel_fastq_create_csv'
+include { CHANNEL_FASTQ_CREATE_CSV as CHANNEL_FASTQ_CREATE_CSV_SAREK        } from '../subworkflows/local/channel_fastq_create_csv'
+include { CHANNEL_FASTQ_CREATE_CSV as CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ    } from '../subworkflows/local/channel_fastq_create_csv'
+include { CHANNEL_FASTQ_CREATE_CSV as CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR } from '../subworkflows/local/channel_fastq_create_csv'
 
 //
 // MODULE: Installed directly from nf-core/modules
 //
-include { FASTP                                                     } from '../modules/nf-core/fastp'
-include { FALCO                                                     } from '../modules/nf-core/falco'
-include { MULTIQC                                                   } from '../modules/nf-core/multiqc'
-include { UNTAR as UNTAR_FLOWCELL                                   } from '../modules/nf-core/untar'
-include { UNTAR as UNTAR_KRAKEN_DB                                  } from '../modules/nf-core/untar'
-include { MD5SUM                                                    } from '../modules/nf-core/md5sum'
-include { SAMSHEE                                                   } from '../modules/nf-core/samshee'
-include { BASES2FASTQ                                               } from '../modules/nf-core/bases2fastq'
-include { CELLRANGER_MKFASTQ                                        } from '../modules/nf-core/cellranger/mkfastq'
-include { MGIKIT_DEMULTIPLEX                                        } from '../modules/nf-core/mgikit/demultiplex'
-include { SGDEMUX                                                   } from '../modules/nf-core/sgdemux'
-include { FQTK                                                      } from '../modules/nf-core/fqtk'
+include { FASTP                                                             } from '../modules/nf-core/fastp'
+include { FALCO                                                             } from '../modules/nf-core/falco'
+include { MULTIQC                                                           } from '../modules/nf-core/multiqc'
+include { UNTAR as UNTAR_FLOWCELL                                           } from '../modules/nf-core/untar'
+include { UNTAR as UNTAR_KRAKEN_DB                                          } from '../modules/nf-core/untar'
+include { MD5SUM                                                            } from '../modules/nf-core/md5sum'
+include { SAMSHEE                                                           } from '../modules/nf-core/samshee'
+include { BASES2FASTQ                                                       } from '../modules/nf-core/bases2fastq'
+include { CELLRANGER_MKFASTQ                                                } from '../modules/nf-core/cellranger/mkfastq'
+include { MGIKIT_DEMULTIPLEX                                                } from '../modules/nf-core/mgikit/demultiplex'
+include { SGDEMUX                                                           } from '../modules/nf-core/sgdemux'
+include { FQTK                                                              } from '../modules/nf-core/fqtk'
 
 //
 // FUNCTION
 //
-include { paramsSummaryMap                                          } from 'plugin/nf-schema'
-include { paramsSummaryMultiqc                                      } from '../subworkflows/nf-core/utils_nfcore_pipeline'
-include { softwareVersionsToYAML                                    } from '../subworkflows/nf-core/utils_nfcore_pipeline'
-include { methodsDescriptionText                                    } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
-include { removeAdapters                                            } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
-include { prettyFormat                                              } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
-include { generateFastqMeta                                         } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
-include { csvToTSV                                                  } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
+include { paramsSummaryMap                                                  } from 'plugin/nf-schema'
+include { paramsSummaryMultiqc                                              } from '../subworkflows/nf-core/utils_nfcore_pipeline'
+include { softwareVersionsToYAML                                            } from '../subworkflows/nf-core/utils_nfcore_pipeline'
+include { methodsDescriptionText                                            } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
+include { removeAdapters                                                    } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
+include { prettyFormat                                                      } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
+include { generateFastqMeta                                                 } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
+include { csvToTSV                                                          } from '../subworkflows/local/utils_nfcore_demultiplex_pipeline'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -354,32 +353,21 @@ workflow DEMULTIPLEX {
         return meta_out
     }
 
-    // Module: FASTQ to samplesheet
-    ch_meta_fastq_rnaseq = ch_meta_fastq
-    FASTQ_TO_SAMPLESHEET_RNASEQ(ch_meta_fastq_rnaseq.collect(), "rnaseq", strandedness)
-
-    ch_meta_fastq_atacseq = ch_meta_fastq
-    FASTQ_TO_SAMPLESHEET_ATACSEQ(ch_meta_fastq_atacseq.collect(), "atacseq", strandedness)
-
-    ch_meta_fastq_taxprofiler = ch_meta_fastq
-    FASTQ_TO_SAMPLESHEET_TAXPROFILER(ch_meta_fastq_taxprofiler.collect(), "taxprofiler", strandedness)
-
-    ch_meta_fastq_sarek = ch_meta_fastq
-    FASTQ_TO_SAMPLESHEET_SAREK(ch_meta_fastq_sarek.collect(), "sarek", strandedness)
-
-    ch_meta_fastq_methylseq = ch_meta_fastq
-    FASTQ_TO_SAMPLESHEET_METHYLSEQ(ch_meta_fastq_methylseq.collect(), "methylseq", strandedness)
-
-    ch_meta_fastq_seqinspector = ch_meta_fastq
-    FASTQ_TO_SAMPLESHEET_SEQINSPECTOR(ch_meta_fastq_seqinspector.collect(), "seqinspector", strandedness)
+    // Samplesheet CSV creation via channel operators
+    CHANNEL_FASTQ_CREATE_CSV_RNASEQ(ch_meta_fastq.collect(), "rnaseq", strandedness, outdir)
+    CHANNEL_FASTQ_CREATE_CSV_ATACSEQ(ch_meta_fastq.collect(), "atacseq", strandedness, outdir)
+    CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER(ch_meta_fastq.collect(), "taxprofiler", strandedness, outdir)
+    CHANNEL_FASTQ_CREATE_CSV_SAREK(ch_meta_fastq.collect(), "sarek", strandedness, outdir)
+    CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ(ch_meta_fastq.collect(), "methylseq", strandedness, outdir)
+    CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR(ch_meta_fastq.collect(), "seqinspector", strandedness, outdir)
 
     ch_pipeline_samplesheets = channel.empty()
-        .mix(FASTQ_TO_SAMPLESHEET_RNASEQ.out.samplesheet.map { meta, samplesheet -> [meta, 'rnaseq', samplesheet] })
-        .mix(FASTQ_TO_SAMPLESHEET_ATACSEQ.out.samplesheet.map { meta, samplesheet -> [meta, 'atacseq', samplesheet] })
-        .mix(FASTQ_TO_SAMPLESHEET_TAXPROFILER.out.samplesheet.map { meta, samplesheet -> [meta, 'taxprofiler', samplesheet] })
-        .mix(FASTQ_TO_SAMPLESHEET_SAREK.out.samplesheet.map { meta, samplesheet -> [meta, 'sarek', samplesheet] })
-        .mix(FASTQ_TO_SAMPLESHEET_METHYLSEQ.out.samplesheet.map { meta, samplesheet -> [meta, 'methylseq', samplesheet] })
-        .mix(FASTQ_TO_SAMPLESHEET_SEQINSPECTOR.out.samplesheet.map { meta, samplesheet -> [meta, 'seqinspector', samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_RNASEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_ATACSEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_SAREK.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
 
     //
     // Collate and save software versions
