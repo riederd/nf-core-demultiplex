@@ -7,15 +7,15 @@ keywords:
   - metadata
 components: []
 input:
-  - ch_collected_meta:
+  - ch_meta_fastq:
       type: map
       description: >
-        Collected channel of meta maps containing sample information
+        Queue channel of meta maps containing sample information
 
-  - pipeline:
-      type: string
+  - pipelines:
+      type: list
       description: >
-        Name of nf-core pipeline e.g. 'rnaseq'
+        List of pipeline names e.g. ['rnaseq', 'sarek']
 
   - strandedness:
       type: string

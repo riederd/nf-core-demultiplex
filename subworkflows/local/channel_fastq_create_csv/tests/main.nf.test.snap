@@ -1,4 +1,17 @@
 {
+    "Should produce valid CSV with mixed single-end and paired-end samples": {
+        "content": [
+            "rnaseq_samplesheet.csv:md5,db81bd281460b589a7f8dd13bb54f519",
+            "headers:[sample, fastq_1, strandedness, fastq_2]",
+            "rowCount:2",
+            "columnCount:4"
+        ],
+        "timestamp": "2026-08-21T12:24:29.611940614",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.6"
+        }
+    },
     "Should run without failures - atacseq": {
         "content": [
             {
@@ -7,20 +20,7 @@
                 ]
             }
         ],
-        "timestamp": "2026-08-20T17:38:07.533435116",
-        "meta": {
-            "nf-test": "0.9.5",
-            "nextflow": "26.04.6"
-        }
-    },
-    "Should produce valid CSV with mixed single-end and paired-end samples": {
-        "content": [
-            "rnaseq_samplesheet.csv:md5,db81bd281460b589a7f8dd13bb54f519",
-            "headers:[sample, fastq_1, strandedness, fastq_2]",
-            "rowCount:2",
-            "columnCount:4"
-        ],
-        "timestamp": "2026-08-21T10:58:56.276632847",
+        "timestamp": "2026-08-21T13:20:44.867201576",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -34,7 +34,7 @@
                 ]
             }
         ],
-        "timestamp": "2026-08-20T17:37:52.234271311",
+        "timestamp": "2026-08-21T13:20:25.058047165",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -48,7 +48,7 @@
                 ]
             }
         ],
-        "timestamp": "2026-08-20T17:38:22.416072204",
+        "timestamp": "2026-08-21T13:21:04.266822507",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -62,7 +62,7 @@
                 ]
             }
         ],
-        "timestamp": "2026-08-20T17:38:29.866461631",
+        "timestamp": "2026-08-21T13:21:13.52423541",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -76,7 +76,7 @@
                 ]
             }
         ],
-        "timestamp": "2026-08-20T17:38:00.016017682",
+        "timestamp": "2026-08-21T13:20:34.337909946",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -90,7 +90,7 @@
                 ]
             }
         ],
-        "timestamp": "2026-08-20T17:38:15.274049344",
+        "timestamp": "2026-08-21T13:20:54.508879189",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"

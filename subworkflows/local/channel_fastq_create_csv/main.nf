@@ -1,18 +1,20 @@
 workflow CHANNEL_FASTQ_CREATE_CSV {
     take:
-    ch_collected_meta // channel: collected list of meta maps
-    pipeline // val: pipeline name
+    ch_meta_fastq // channel: queue channel of meta maps
+    pipelines // val: list of pipeline names
     strandedness // val: strandedness
 
     main:
-    ch_samplesheet = ch_collected_meta
-        .flatten()
-        .map { meta -> buildSamplesheetMeta(meta, pipeline, strandedness) }
-        .toList()
-        .map { items ->
+    ch_samplesheet = ch_meta_fastq.collect()
+        .flatMap { meta_list ->
+            pipelines.collect { pipeline -> [pipeline, meta_list] }
+        }
+        .map { pipeline, meta_list ->
+            def items = meta_list.collect { meta -> buildSamplesheetMeta(meta, pipeline, strandedness) }
+
             // Compute union of all keys across all rows
             def allKeys = [] as LinkedHashSet
-            items.each { item -> allKeys.addAll(item.keySet()) }
+            items.each { allKeys.addAll(it.keySet()) }
 
             // Build header and rows with all columns
             def header = allKeys.collect { key -> '"' + key + '"' }.join(",")
@@ -24,9 +26,9 @@ workflow CHANNEL_FASTQ_CREATE_CSV {
                     .join(",")
             }
 
-            return "${header}\n${rows.join("\n")}"
+            return [pipeline, "${header}\n${rows.join("\n")}"]
         }
-        .collectFile(name: "${pipeline}_samplesheet.csv", sort: false)
+        .collectFile { item -> ["${item[0]}_samplesheet.csv", item[1]] }
 
     emit:
     samplesheet = ch_samplesheet
