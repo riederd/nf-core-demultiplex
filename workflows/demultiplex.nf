@@ -362,12 +362,12 @@ workflow DEMULTIPLEX {
     CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR(ch_meta_fastq.collect(), "seqinspector", strandedness)
 
     ch_pipeline_samplesheets = channel.empty()
-        .mix(CHANNEL_FASTQ_CREATE_CSV_RNASEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
-        .mix(CHANNEL_FASTQ_CREATE_CSV_ATACSEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
-        .mix(CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
-        .mix(CHANNEL_FASTQ_CREATE_CSV_SAREK.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
-        .mix(CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
-        .mix(CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR.out.samplesheet.map { samplesheet -> [[:], samplesheet] })
+        .mix(CHANNEL_FASTQ_CREATE_CSV_RNASEQ.out.samplesheet)
+        .mix(CHANNEL_FASTQ_CREATE_CSV_ATACSEQ.out.samplesheet)
+        .mix(CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER.out.samplesheet)
+        .mix(CHANNEL_FASTQ_CREATE_CSV_SAREK.out.samplesheet)
+        .mix(CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ.out.samplesheet)
+        .mix(CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR.out.samplesheet)
 
     //
     // Collate and save software versions
