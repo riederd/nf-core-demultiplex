@@ -35,6 +35,29 @@ The pipeline is built using [Nextflow](https://www.nextflow.io/) and processes d
 - `<flowcell_id>/sample.fastq.gz` or `<flowcell_id>/L00<meta.lane>/sample.fastq.gz`
   - Untrimmed raw fastq files
 
+- `<flowcell_id>/L00<meta.lane>/Reports/`
+  - `Adapter_Cycle_Metrics.csv`: Adapter cycle metrics
+  - `Adapter_Metrics.csv`: Adapter metrics
+  - `Demultiplex_Stats.csv`: Demultiplexing statistics
+  - `Demultiplex_Tile_Stats.csv`: Demultiplex tile statistics
+  - `fastq_list.csv`: FASTQ list
+  - `Index_Hopping_Counts.csv`: Index hopping counts
+  - `IndexMetricsOut.bin`: Index metrics
+  - `Quality_Metrics.csv`: Quality metrics
+  - `Quality_Tile_Metrics.csv`: Quality tile metrics
+  - `RunInfo.xml`: Run information
+  - `SampleSheet.csv`: Sample sheet used for demultiplexing
+  - `Top_Unknown_Barcodes.csv`: Top unknown barcodes
+
+- `<flowcell_id>/L00<meta.lane>/Logs/`
+  - `Errors.log`: Error log
+  - `FastqComplete.log`: FASTQ completion log
+  - `Info.log`: Information log
+  - `Warnings.log`: Warning log
+
+- `<flowcell_id>/InterOp/`
+  - Binary interop files for the sequencing run
+
 </details>
 
 ### bases2fastq

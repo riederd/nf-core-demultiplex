@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### `Added`
 
 - [#398](https://github.com/nf-core/demultiplex/pull/398) Add `AGENTS.md` file with nf-core agent instructions
+- [#412](https://github.com/nf-core/demultiplex/pull/412) Expand `bcl2fastq` and `bcl-convert` output documentation
 
 ### `Changed`
 
