@@ -22,8 +22,8 @@ nextflow_workflow {
         }
 
         then {
+            assert workflow.success
             assertAll(
-                { assert workflow.success },
                 { assert snapshot(sanitizeOutput(workflow.out)).match() }
             )
         }
@@ -43,8 +43,8 @@ nextflow_workflow {
         }
 
         then {
+            assert workflow.success
             assertAll(
-                { assert workflow.success },
                 { assert snapshot(sanitizeOutput(workflow.out)).match() }
             )
         }
@@ -64,8 +64,8 @@ nextflow_workflow {
         }
 
         then {
+            assert workflow.success
             assertAll(
-                { assert workflow.success },
                 { assert snapshot(sanitizeOutput(workflow.out)).match() }
             )
         }
@@ -85,8 +85,8 @@ nextflow_workflow {
         }
 
         then {
+            assert workflow.success
             assertAll(
-                { assert workflow.success },
                 { assert snapshot(sanitizeOutput(workflow.out)).match() }
             )
         }
@@ -106,8 +106,8 @@ nextflow_workflow {
         }
 
         then {
+            assert workflow.success
             assertAll(
-                { assert workflow.success },
                 { assert snapshot(sanitizeOutput(workflow.out)).match() }
             )
         }
@@ -127,9 +127,39 @@ nextflow_workflow {
         }
 
         then {
+            assert workflow.success
             assertAll(
-                { assert workflow.success },
                 { assert snapshot(sanitizeOutput(workflow.out)).match() }
+            )
+        }
+    }
+
+    test("Should produce valid CSV with mixed single-end and paired-end samples") {
+
+        when {
+            workflow {
+                """
+                input[0] = channel.of(
+                    [id:'SampleA_S1_L001', samplename:'SampleA', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'SampleA_S1_L001_R1_001.fastq.gz'],
+                    [id:'SampleB_S1_L001', samplename:'SampleB', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:false, fastq_1:'SampleB_S1_L001_R1_001.fastq.gz', fastq_2:'SampleB_S1_L001_R2_001.fastq.gz']
+                )
+                input[1] = 'rnaseq'
+                input[2] = 'auto'
+                input[3] = "${outputDir}"
+                """
+            }
+        }
+
+        then {
+            def samplesheet = path("${outputDir}/samplesheet/rnaseq_samplesheet.csv")
+            assert workflow.success
+            assertAll(
+                { assert snapshot(
+                    sanitizeOutput(workflow.out),
+                    "headers:" + samplesheet.csv.columnNames,
+                    "rowcount:" + samplesheet.csv.rowCount,
+                    "columnCount:" + samplesheet.csv.columnCount
+                    ).match() },
             )
         }
     }

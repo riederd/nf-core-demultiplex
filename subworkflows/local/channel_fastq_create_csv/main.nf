@@ -9,12 +9,25 @@ workflow CHANNEL_FASTQ_CREATE_CSV {
     ch_samplesheet = ch_collected_meta
         .flatten()
         .map { meta -> buildSamplesheetMeta(meta, pipeline, strandedness) }
-        .map { meta ->
-            def header = meta.keySet().collect { key -> '"' + key + '"' }.join(",")
-            def values = meta.values().collect { value -> '"' + value + '"' }.join(",")
-            return "${header}\n${values}"
+        .toList()
+        .map { items ->
+            // Compute union of all keys across all rows
+            def allKeys = [] as LinkedHashSet
+            items.each { item -> allKeys.addAll(item.keySet()) }
+
+            // Build header and rows with all columns
+            def header = allKeys.collect { key -> '"' + key + '"' }.join(",")
+            def rows = items.collect { meta ->
+                allKeys
+                    .collect { key ->
+                        meta.containsKey(key) ? '"' + meta[key] + '"' : '""'
+                    }
+                    .join(",")
+            }
+
+            return "${header}\n${rows.join("\n")}"
         }
-        .collectFile(name: "${pipeline}_samplesheet.csv", keepHeader: true, sort: true, storeDir: "${outdir}/samplesheet")
+        .collectFile(name: "${pipeline}_samplesheet.csv", keepHeader: true, sort: false, storeDir: "${outdir}/samplesheet")
 
     emit:
     samplesheet = ch_samplesheet
