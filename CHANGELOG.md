@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#405](https://github.com/nf-core/demultiplex/pull/405) Template update for nf-core/tools v4.0.3
 - [#409](https://github.com/nf-core/demultiplex/pull/409) Update bclconvert and multiqcsav
 - [#410](https://github.com/nf-core/demultiplex/pull/410) Template update for nf-core/tools v4.1.0
+
+### `Fixed`
+
 - [#412](https://github.com/nf-core/demultiplex/pull/412) Fix extra `output/` prefix in `demultiplex_stats` and `demultiplex_logs` published paths
 
 ### `Dependencies`
@@ -36,8 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 | Plugin    | Old version | New version |
 | --------- | ----------- | ----------- |
 | nf-schema | 2.7.0       | 2.7.2       |
-
-### `Fixed`
 
 ## 1.7.1 - 2026-04-20
 
