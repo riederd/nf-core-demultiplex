@@ -1,7 +1,7 @@
 {
     "mgikit": {
         "content": [
-            24,
+            18,
             {
                 "FALCO": {
                     "falco": "1.2.5"
@@ -298,10 +298,10 @@
                 "Sample04_S4_L01_R2_001.fastq.gz:md5,cd88081007614f5bed7975b04e25b7e3"
             ]
         ],
-        "timestamp": "2026-07-30T18:55:54.409665781",
+        "timestamp": "2026-08-20T17:03:14.326375305",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     }
 }

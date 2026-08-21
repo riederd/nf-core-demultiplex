@@ -1,7 +1,7 @@
 {
     "Test single-flowcell input - SGDEMUX": {
         "content": [
-            113,
+            107,
             {
                 "FALCO": {
                     "falco": "1.2.5"
@@ -593,15 +593,15 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-30T13:44:05.897942435",
+        "timestamp": "2026-08-20T16:45:33.698233417",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     },
     "Test single-flowcell input - BCLCONVERT": {
         "content": [
-            28,
+            22,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.5.4"
@@ -1024,7 +1024,7 @@
                 ]
             ]
         ],
-        "timestamp": "2026-08-17T11:56:25.399112385",
+        "timestamp": "2026-08-20T16:50:43.271039959",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
@@ -1032,7 +1032,7 @@
     },
     "Test single-flowcell input - BASES2FASTQ": {
         "content": [
-            13,
+            7,
             {
                 "BASES2FASTQ": {
                     "bases2fastq": "2.3.0.2116803307"
@@ -1268,15 +1268,15 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-30T13:46:04.634583013",
+        "timestamp": "2026-08-20T16:47:36.485651938",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     },
     "Test single-flowcell input - FQTK": {
         "content": [
-            109,
+            103,
             {
                 "FALCO": {
                     "falco": "1.2.5"
@@ -2105,10 +2105,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-30T13:53:55.502554169",
+        "timestamp": "2026-08-20T16:53:42.294499913",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     },
     "Fails with both --input and --flowcell_samplesheet": {
@@ -2129,7 +2129,7 @@
     },
     "Test single-flowcell input - BCL2FASTQ": {
         "content": [
-            13,
+            7,
             {
                 "BCL2FASTQ": {
                     "bcl2fastq": "2.20.0.422"
@@ -2424,10 +2424,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-30T13:40:49.764888558",
+        "timestamp": "2026-08-20T16:43:39.230393465",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     }
 }

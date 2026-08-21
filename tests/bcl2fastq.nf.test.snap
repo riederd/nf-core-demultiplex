@@ -1,7 +1,7 @@
 {
     "Bcl2Fastq": {
         "content": [
-            13,
+            7,
             {
                 "BCL2FASTQ": {
                     "bcl2fastq": "2.20.0.422"

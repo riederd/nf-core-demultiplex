@@ -1,7 +1,7 @@
 {
     "MKFASTQ": {
         "content": [
-            13,
+            7,
             {
                 "CELLRANGER_MKFASTQ": {
                     "cellranger": "9.0.1"
@@ -286,7 +286,7 @@
                 ]
             ]
         ],
-        "timestamp": "2026-08-21T16:34:25.368987693",
+        "timestamp": "2026-08-20T17:04:29.126773532",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
