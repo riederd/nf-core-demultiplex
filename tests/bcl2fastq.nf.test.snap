@@ -65,13 +65,12 @@
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_report.html",
                 "220422_M11111_0222_000000000-K9H97/L001/Sample1_S1_L001_summary.txt",
                 "220422_M11111_0222_000000000-K9H97/L001/Stats",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats/AdapterTrimming.txt",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats/ConversionStats.xml",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats/DemultiplexingStats.xml",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats/DemuxSummaryF1L1.txt",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats/FastqSummaryF1L1.txt",
-                "220422_M11111_0222_000000000-K9H97/L001/Stats/output/Stats/Stats.json",
+                "220422_M11111_0222_000000000-K9H97/L001/Stats/AdapterTrimming.txt",
+                "220422_M11111_0222_000000000-K9H97/L001/Stats/ConversionStats.xml",
+                "220422_M11111_0222_000000000-K9H97/L001/Stats/DemultiplexingStats.xml",
+                "220422_M11111_0222_000000000-K9H97/L001/Stats/DemuxSummaryF1L1.txt",
+                "220422_M11111_0222_000000000-K9H97/L001/Stats/FastqSummaryF1L1.txt",
+                "220422_M11111_0222_000000000-K9H97/L001/Stats/Stats.json",
                 "checkqc_reports.csv",
                 "demultiplex_interop.csv",
                 "demultiplex_logs.csv",
@@ -297,7 +296,7 @@
                 ]
             ]
         ],
-        "timestamp": "2026-08-20T16:30:33.185075542",
+        "timestamp": "2026-08-21T16:05:03.370360436",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"
