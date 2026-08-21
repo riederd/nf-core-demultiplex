@@ -1,7 +1,7 @@
 {
     "Bcl2Fastq_pe": {
         "content": [
-            14,
+            8,
             {
                 "BCL2FASTQ": {
                     "bcl2fastq": "2.20.0.422"
@@ -65,13 +65,12 @@
                 "PE_Sample/L001/Sample1_S1_L001_R2.fastp.fastq.gz_summary.txt",
                 "PE_Sample/L001/Sample1_S1_L001_R2_001.fastq.gz",
                 "PE_Sample/L001/Stats",
-                "PE_Sample/L001/Stats/output/Stats",
-                "PE_Sample/L001/Stats/output/Stats/AdapterTrimming.txt",
-                "PE_Sample/L001/Stats/output/Stats/ConversionStats.xml",
-                "PE_Sample/L001/Stats/output/Stats/DemultiplexingStats.xml",
-                "PE_Sample/L001/Stats/output/Stats/DemuxSummaryF1L1.txt",
-                "PE_Sample/L001/Stats/output/Stats/FastqSummaryF1L1.txt",
-                "PE_Sample/L001/Stats/output/Stats/Stats.json",
+                "PE_Sample/L001/Stats/AdapterTrimming.txt",
+                "PE_Sample/L001/Stats/ConversionStats.xml",
+                "PE_Sample/L001/Stats/DemultiplexingStats.xml",
+                "PE_Sample/L001/Stats/DemuxSummaryF1L1.txt",
+                "PE_Sample/L001/Stats/FastqSummaryF1L1.txt",
+                "PE_Sample/L001/Stats/Stats.json",
                 "checkqc_reports.csv",
                 "demultiplex_interop.csv",
                 "demultiplex_logs.csv",
@@ -331,10 +330,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-08-11T16:45:51.8058246",
+        "timestamp": "2026-08-20T17:16:58.780244141",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.4"
+            "nextflow": "26.04.6"
         }
     }
 }

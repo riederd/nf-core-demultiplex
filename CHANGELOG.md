@@ -8,31 +8,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### `Added`
 
 - [#398](https://github.com/nf-core/demultiplex/pull/398) Add `AGENTS.md` file with nf-core agent instructions
+- [#412](https://github.com/nf-core/demultiplex/pull/412) Expand `bcl2fastq` and `bcl-convert` output documentation
 
 ### `Changed`
 
 - [#394](https://github.com/nf-core/demultiplex/pull/394) Template update for nf-core/tools v4.0.2
-- [#405](https://github.com/nf-core/demultiplex/pull/405) Template update for nf-core/tools v4.0.3
 - [#399](https://github.com/nf-core/demultiplex/pull/399) Back to dev
 - [#401](https://github.com/nf-core/demultiplex/pull/401) Add volume=40gb to nf-test runners to fix disk space issues
 - [#401](https://github.com/nf-core/demultiplex/pull/401) Update contributor ORCID identifiers and affiliations
 - [#402](https://github.com/nf-core/demultiplex/pull/402) Added seqinspector sample sheet generation
+- [#405](https://github.com/nf-core/demultiplex/pull/405) Template update for nf-core/tools v4.0.3
+- [#409](https://github.com/nf-core/demultiplex/pull/409) Update bclconvert and multiqcsav
+- [#410](https://github.com/nf-core/demultiplex/pull/410) Template update for nf-core/tools v4.1.0
+- [#411](https://github.com/nf-core/demultiplex/pull/411) Replace FASTQ_TO_SAMPLESHEET process with CHANNEL_FASTQ_CREATE_CSV subworkflow using channel operators
+
+### `Fixed`
+
+- [#396](https://github.com/nf-core/demultiplex/pull/396) Fix handling of Element Bio (AVITI) sequencing runs w/o multiplexing (no index sequences) - [#395](https://github.com/nf-core/demultiplex/issues/395)
+- [#412](https://github.com/nf-core/demultiplex/pull/412) Fix extra `output/` prefix in `demultiplex_stats` and `demultiplex_logs` published paths
 
 ### `Dependencies`
 
 | Dependency | Old version | New version |
 | ---------- | ----------- | ----------- |
+| bclconvert | 4.4.6       | 4.5.4       |
 | multiqc    | 1.33        | 1.35        |
+| multiqcsav |             |             |
+| --multiqc  | 1.33        | 1.35        |
+| --pip      | 25.3        | 26.1.1      |
 
 ### `Plugins`
 
 | Plugin    | Old version | New version |
 | --------- | ----------- | ----------- |
 | nf-schema | 2.7.0       | 2.7.2       |
-
-### `Fixed`
-
-- [#396](https://github.com/nf-core/demultiplex/pull/396) Fix handling of Element Bio (AVITI) sequencing runs w/o multiplexing (no index sequences) - [#395](https://github.com/nf-core/demultiplex/issues/395)
 
 ## 1.7.1 - 2026-04-20
 

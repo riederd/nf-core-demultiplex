@@ -1,10 +1,10 @@
 {
     "BCL-CONVERT-mini": {
         "content": [
-            28,
+            22,
             {
                 "BCLCONVERT": {
-                    "bclconvert": "4.4.6"
+                    "bclconvert": "4.5.4"
                 },
                 "FALCO": {
                     "falco": "1.2.5"
@@ -429,10 +429,10 @@
                 ]
             ]
         ],
-        "timestamp": "2026-07-30T13:35:52.869654973",
+        "timestamp": "2026-08-20T16:36:16.078238374",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     }
 }

@@ -1,10 +1,10 @@
 {
     "User wants to skip trimming with the demultiplexer, and trim with fastp": {
         "content": [
-            17,
+            11,
             {
                 "BCLCONVERT": {
-                    "bclconvert": "4.4.6"
+                    "bclconvert": "4.5.4"
                 },
                 "FASTP": {
                     "fastp": "1.1.0"
@@ -271,18 +271,18 @@
                 "Undetermined_S0_L001_R1_001.fastq.gz:md5,d41d8cd98f00b204e9800998ecf8427e"
             ]
         ],
-        "timestamp": "2026-07-30T16:17:29.819222648",
+        "timestamp": "2026-08-20T17:19:38.989745062",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     },
     "User wants to trim with the demultiplexer": {
         "content": [
-            15,
+            9,
             {
                 "BCLCONVERT": {
-                    "bclconvert": "4.4.6"
+                    "bclconvert": "4.5.4"
                 },
                 "MD5SUM": {
                     "md5sum": 9.5
@@ -496,18 +496,18 @@
                 "Undetermined_S0_L001_R1_001.fastq.gz:md5,d41d8cd98f00b204e9800998ecf8427e"
             ]
         ],
-        "timestamp": "2026-07-30T16:18:39.028875475",
+        "timestamp": "2026-08-20T17:20:45.228186199",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     },
     "User wants to skip trimming all together": {
         "content": [
-            15,
+            9,
             {
                 "BCLCONVERT": {
-                    "bclconvert": "4.4.6"
+                    "bclconvert": "4.5.4"
                 },
                 "MD5SUM": {
                     "md5sum": 9.5
@@ -721,10 +721,10 @@
                 "Undetermined_S0_L001_R1_001.fastq.gz:md5,d41d8cd98f00b204e9800998ecf8427e"
             ]
         ],
-        "timestamp": "2026-07-30T16:19:52.287860921",
+        "timestamp": "2026-08-17T12:22:52.977523416",
         "meta": {
             "nf-test": "0.9.5",
-            "nextflow": "26.04.0"
+            "nextflow": "26.04.6"
         }
     }
 }
