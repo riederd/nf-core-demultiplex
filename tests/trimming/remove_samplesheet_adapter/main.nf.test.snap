@@ -504,7 +504,7 @@
     },
     "User wants to skip trimming all together": {
         "content": [
-            15,
+            9,
             {
                 "BCLCONVERT": {
                     "bclconvert": "4.5.4"
