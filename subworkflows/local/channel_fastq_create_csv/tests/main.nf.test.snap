@@ -15,16 +15,12 @@
     },
     "Should produce valid CSV with mixed single-end and paired-end samples": {
         "content": [
-            {
-                "samplesheet": [
-                    "rnaseq_samplesheet.csv:md5,db81bd281460b589a7f8dd13bb54f519"
-                ]
-            },
+            "rnaseq_samplesheet.csv:md5,db81bd281460b589a7f8dd13bb54f519",
             "headers:[sample, fastq_1, strandedness, fastq_2]",
-            "rowcount:2",
+            "rowCount:2",
             "columnCount:4"
         ],
-        "timestamp": "2026-08-21T09:56:28.83180275",
+        "timestamp": "2026-08-21T10:58:56.276632847",
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.6"

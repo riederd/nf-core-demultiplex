@@ -3,7 +3,6 @@ workflow CHANNEL_FASTQ_CREATE_CSV {
     ch_collected_meta // channel: collected list of meta maps
     pipeline // val: pipeline name
     strandedness // val: strandedness
-    outdir // val: output directory
 
     main:
     ch_samplesheet = ch_collected_meta
@@ -27,10 +26,7 @@ workflow CHANNEL_FASTQ_CREATE_CSV {
 
             return "${header}\n${rows.join("\n")}"
         }
-        // NOTE: collectFile with storeDir does not overwrite existing files.
-        // If the pipeline is re-run with different input data, the stale
-        // samplesheet from the previous run will remain in the storeDir.
-        .collectFile(name: "${pipeline}_samplesheet.csv", sort: false, storeDir: "${outdir}/samplesheet")
+        .collectFile(name: "${pipeline}_samplesheet.csv", sort: false)
 
     emit:
     samplesheet = ch_samplesheet

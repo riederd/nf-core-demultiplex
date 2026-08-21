@@ -354,12 +354,12 @@ workflow DEMULTIPLEX {
     }
 
     // Samplesheet CSV creation via channel operators
-    CHANNEL_FASTQ_CREATE_CSV_RNASEQ(ch_meta_fastq.collect(), "rnaseq", strandedness, outdir)
-    CHANNEL_FASTQ_CREATE_CSV_ATACSEQ(ch_meta_fastq.collect(), "atacseq", strandedness, outdir)
-    CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER(ch_meta_fastq.collect(), "taxprofiler", strandedness, outdir)
-    CHANNEL_FASTQ_CREATE_CSV_SAREK(ch_meta_fastq.collect(), "sarek", strandedness, outdir)
-    CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ(ch_meta_fastq.collect(), "methylseq", strandedness, outdir)
-    CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR(ch_meta_fastq.collect(), "seqinspector", strandedness, outdir)
+    CHANNEL_FASTQ_CREATE_CSV_RNASEQ(ch_meta_fastq.collect(), "rnaseq", strandedness)
+    CHANNEL_FASTQ_CREATE_CSV_ATACSEQ(ch_meta_fastq.collect(), "atacseq", strandedness)
+    CHANNEL_FASTQ_CREATE_CSV_TAXPROFILER(ch_meta_fastq.collect(), "taxprofiler", strandedness)
+    CHANNEL_FASTQ_CREATE_CSV_SAREK(ch_meta_fastq.collect(), "sarek", strandedness)
+    CHANNEL_FASTQ_CREATE_CSV_METHYLSEQ(ch_meta_fastq.collect(), "methylseq", strandedness)
+    CHANNEL_FASTQ_CREATE_CSV_SEQINSPECTOR(ch_meta_fastq.collect(), "seqinspector", strandedness)
 
     ch_pipeline_samplesheets = channel.empty()
         .mix(CHANNEL_FASTQ_CREATE_CSV_RNASEQ.out.samplesheet.map { samplesheet -> [[:], samplesheet] })

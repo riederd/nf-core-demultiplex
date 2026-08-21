@@ -22,11 +22,6 @@ input:
       description: >
         Strandedness value for rnaseq pipeline
 
-  - outdir:
-      type: string
-      description: >
-        Output directory for samplesheet files
-
 output:
   - samplesheet:
       type: file

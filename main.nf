@@ -171,6 +171,7 @@ output {
     }
     pipeline_samplesheets {
         path { "samplesheet/" }
+        overwrite true
     }
     multiqc_report {
         path { "multiqc/" }
