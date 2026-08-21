@@ -112,8 +112,8 @@ workflow {
     demultiplexed_fastq   = NFCORE_DEMULTIPLEX.out.demultiplexed_fastq.transpose()
     demultiplex_reports   = NFCORE_DEMULTIPLEX.out.demultiplex_reports.transpose()
     demultiplex_interop   = NFCORE_DEMULTIPLEX.out.demultiplex_interop.transpose()
-    demultiplex_stats     = NFCORE_DEMULTIPLEX.out.demultiplex_stats
-    demultiplex_logs      = NFCORE_DEMULTIPLEX.out.demultiplex_logs
+    demultiplex_stats     = NFCORE_DEMULTIPLEX.out.demultiplex_stats.transpose()
+    demultiplex_logs      = NFCORE_DEMULTIPLEX.out.demultiplex_logs.transpose()
     pipeline_samplesheets = NFCORE_DEMULTIPLEX.out.pipeline_samplesheets
     multiqc_report        = NFCORE_DEMULTIPLEX.out.multiqc_report
     checkqc_reports       = NFCORE_DEMULTIPLEX.out.checkqc_reports
@@ -153,8 +153,7 @@ output {
     }
     demultiplex_stats {
         path { meta, stat ->
-            def lane_dir = meta.lane ? "${meta.id}/L00${meta.lane}" : "${meta.id}"
-            "${lane_dir}/${stat.name}"
+            stat >> (meta.lane ? "${meta.id}/L00${meta.lane}/${stat.name}" : "${meta.id}/${stat.name}")
         }
         index {
             path 'demultiplex_stats.csv'
@@ -162,8 +161,7 @@ output {
     }
     demultiplex_logs {
         path { meta, log ->
-            def lane_dir = meta.lane ? "${meta.id}/L00${meta.lane}" : "${meta.id}"
-            "${lane_dir}/${log.name}"
+            log >> (meta.lane ? "${meta.id}/L00${meta.lane}/${log.name}" : "${meta.id}/${log.name}")
         }
         index {
             path 'demultiplex_logs.csv'
