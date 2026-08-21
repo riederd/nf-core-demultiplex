@@ -13,7 +13,7 @@ nextflow_workflow {
         when {
             workflow {
                 """
-                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']]).collect()
+                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']])
                 input[1] = 'rnaseq'
                 input[2] = 'auto'
                 input[3] = "${outputDir}"
@@ -34,7 +34,7 @@ nextflow_workflow {
         when {
             workflow {
                 """
-                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_sarek', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:false, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz', fastq_2:'Sample1_S1_L001_R2_001.fastq.gz']]).collect()
+                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_sarek', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:false, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz', fastq_2:'Sample1_S1_L001_R2_001.fastq.gz']])
                 input[1] = 'sarek'
                 input[2] = ''
                 input[3] = "${outputDir}"
@@ -55,7 +55,7 @@ nextflow_workflow {
         when {
             workflow {
                 """
-                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_atacseq', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:false, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz', fastq_2:'Sample1_S1_L001_R2_001.fastq.gz']]).collect()
+                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_atacseq', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:false, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz', fastq_2:'Sample1_S1_L001_R2_001.fastq.gz']])
                 input[1] = 'atacseq'
                 input[2] = ''
                 input[3] = "${outputDir}"
@@ -76,7 +76,7 @@ nextflow_workflow {
         when {
             workflow {
                 """
-                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_seqinspector', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']]).collect()
+                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_seqinspector', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']])
                 input[1] = 'seqinspector'
                 input[2] = ''
                 input[3] = "${outputDir}"
@@ -97,7 +97,7 @@ nextflow_workflow {
         when {
             workflow {
                 """
-                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_taxprofiler', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']]).collect()
+                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_taxprofiler', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']])
                 input[1] = 'taxprofiler'
                 input[2] = ''
                 input[3] = "${outputDir}"
@@ -118,7 +118,7 @@ nextflow_workflow {
         when {
             workflow {
                 """
-                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_methylseq', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']]).collect()
+                input[0] = channel.of([[id:'Sample1_S1_L001', samplename:'Sample1_methylseq', fcid:'220422_M11111_0222_000000000-K9H97', lane:'1', empty:false, single_end:true, fastq_1:'Sample1_S1_L001_R1_001.fastq.gz']])
                 input[1] = 'methylseq'
                 input[2] = ''
                 input[3] = "${outputDir}"
