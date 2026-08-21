@@ -27,7 +27,10 @@ workflow CHANNEL_FASTQ_CREATE_CSV {
 
             return "${header}\n${rows.join("\n")}"
         }
-        .collectFile(name: "${pipeline}_samplesheet.csv", keepHeader: true, sort: false, storeDir: "${outdir}/samplesheet")
+        // NOTE: collectFile with storeDir does not overwrite existing files.
+        // If the pipeline is re-run with different input data, the stale
+        // samplesheet from the previous run will remain in the storeDir.
+        .collectFile(name: "${pipeline}_samplesheet.csv", sort: false, storeDir: "${outdir}/samplesheet")
 
     emit:
     samplesheet = ch_samplesheet

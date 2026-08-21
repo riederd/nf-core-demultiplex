@@ -3,7 +3,7 @@ name: channel_fastq_create_csv
 description: Create pipeline samplesheet CSV from metadata using channel operators
 keywords:
   - samplesheet
-  - CSV
+  - csv
   - metadata
 components: []
 input:
